@@ -1,3 +1,77 @@
-$bg-color:red;
+// Functions first
+@import "../../node_modules/bootstrap/scss/functions";
 
-body{background:$bg-color;}
+// Variable overrides second
+@import "./variables.scss";
+
+// Required Bootstrap imports
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Optional components
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/forms";
+
+
+header{
+     width:100%;
+     height:100%;
+     
+     nav{
+          height:$heaFooHeight;
+          position: relative;
+          border-radius:0 0 $radiusMax $radiusMax;
+     
+          .hr{
+               width: 2px;
+               height: 100%;
+               background-color:#000;
+          }
+          button{
+               margin-top:1px;
+               margin-left:10px;
+          }     
+          .logo{position: absolute; left:20px;}
+          .menu{
+               position: absolute;
+               right:20px;
+          }
+     }
+}
+
+footer{
+     width:100%;
+     height:100%;
+     nav{
+          height:$heaFooHeight;
+          position: relative;
+          border-radius:$radiusMax $radiusMax 0 0 ;
+     
+          
+          .logo{position: absolute;}
+          .menu{
+               margin:0 auto;
+          }
+     }
+     p{
+          line-height:$heaFooHeight;
+          text-align: center;
+     }
+}
+
+
+
