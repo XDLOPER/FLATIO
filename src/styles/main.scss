@@ -1,0 +1,39 @@
+section{
+     margin-top: 50px;
+     margin-bottom: 50px;
+     .sectionOne{
+
+          .col{
+     
+               .card{
+                    position: relative;
+                    height: 400px !important;
+                    overflow: hidden !important;
+                    text-align: center;
+                    border:$mainBorder;
+                    border-radius: $radiusMax;
+                    padding: 15px;
+
+                    .card-footer{
+                         position: absolute;
+                         width: 100% !important;
+                         bottom:0;
+                         padding: 15px;
+                         small{
+                              width:100% !important;
+                         }
+                    }
+                    h5{
+                         margin:10px 0px;
+                    }
+                    img{
+                         border-radius: $radiusInfinity;
+                         width: 200px;
+                         height:200px;
+                         margin:0 auto;
+                    }
+               }
+     
+          }
+     }
+}

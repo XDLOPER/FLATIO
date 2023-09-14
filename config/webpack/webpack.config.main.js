@@ -50,10 +50,13 @@ const config = {
                     test: /\.(png|svg|jpg|gif|ico)$/,
                     use: [{
                     loader: 'file-loader',
+                    type: 'asset/resource',
                     options:  {
-                         name: '[name].[ext]',
-                              }
-                         }]    
+                         name: '[name][contenthash].[ext]',
+                         outputPath:"images"
+
+                    }
+                    }]    
                },
           ]
      },

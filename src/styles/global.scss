@@ -20,12 +20,15 @@
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 @import "../../node_modules/bootstrap/scss/containers";
+
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/dropdown";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/forms";
 
+// layout main   
+@import "./main";
 
 header{
      width:100%;
@@ -70,6 +73,7 @@ footer{
      p{
           line-height:$heaFooHeight;
           text-align: center;
+          letter-spacing:2px;
      }
 }
 
